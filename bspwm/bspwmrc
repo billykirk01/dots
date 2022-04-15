@@ -3,6 +3,8 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x picom > /dev/null || picom &
 
+bash $HOME/.fehbg
+
 bspc monitor -d 1 2 3 4 5
 
 bspc config border_width         2
@@ -19,4 +21,3 @@ bspc config presel_feedback_color "#A3BE8C"
 
 $HOME/.config/polybar/launch.sh
 
-bash $HOME/.fehbg

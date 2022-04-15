@@ -14,10 +14,23 @@ super + w
 super + @space
 	sh .config/rofi/launchers/colorful/launcher.sh
 
+# power menu
+super + x
+    sh .config/rofi/powermenu/powermenu.sh
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# lockscreen
+ctrl + alt + l
+    betterlockscreen --lock
+
+
+# lockscreen
+ctrl + alt + p
+    cd ~/Pictures/screenshots && maim -u -f png -s -b 2 -c 0.35,0.55,0.85,0.25 -l | tee "screenshot_$(date +%Y-%m-%d-%H-%M-%S).png" | xclip -selection clipboard -t image/png
+#
 #
 # bspwm hotkeys
 #
