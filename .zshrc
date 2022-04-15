@@ -77,6 +77,11 @@ plugins=(
     vi-mode
 )
 
+
+SPACESHIP_PROMPT_SEPARATE_LINE=false
+SPACESHIP_USER_SHOW=always
+SPACESHIP_USER_PREFIX="as " 
+SPACESHIP_TIME_SHOW=true
 VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
 
 source $ZSH/oh-my-zsh.sh
@@ -108,21 +113,21 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # On-demand rehash
-zshcache_time="$(date +%s%N)"
+#zshcache_time="$(date +%s%N)"
 
-autoload -Uz add-zsh-hook
+#autoload -Uz add-zsh-hook
 
-rehash_precmd() {
-  if [[ -a /var/cache/zsh/pacman ]]; then
-    local paccache_time="$(date -r /var/cache/zsh/pacman +%s%N)"
-    if (( zshcache_time < paccache_time )); then
-      rehash
-      zshcache_time="$paccache_time"
-    fi
-  fi
-}
+#rehash_precmd() {
+#  if [[ -a /var/cache/zsh/pacman ]]; then
+#    local paccache_time="$(date -r /var/cache/zsh/pacman +%s%N)"
+#    if (( zshcache_time < paccache_time )); then
+#      rehash
+#      zshcache_time="$paccache_time"
+#    fi
+#  fi
+#}
 
-add-zsh-hook -Uz precmd rehash_precmd
+#add-zsh-hook -Uz precmd rehash_precmd
 
 # configs
 alias bspwmconfig="vim ~/.config/bspwm/bspwmrc"
@@ -156,4 +161,3 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/billy/.local/bin
-
