@@ -3,6 +3,10 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x picom > /dev/null || picom &
 
+if xrandr | grep -w "HDMI-2 connected"; then
+    xrandr --output HDMI-2 --right-of HDMI-1
+fi
+
 bash $HOME/.fehbg
 
 bspc monitor -d 1 2 3 4 5

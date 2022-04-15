@@ -143,6 +143,7 @@ alias top='htop'
 alias fd='fdfind'
 alias screenoff='xrandr --output eDP1 --off'
 alias screenon='xrandr --output eDP1 --mode 1920x1200'
+alias remote-dekstop='xfreerdp -f -u bkirk -v epic95305.dhcp.epic.com -gfx -sound'
 
 . ~/.cargo/env
 
