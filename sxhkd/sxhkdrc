@@ -12,7 +12,7 @@ super + w
 
 # program launcher
 super + @space
-	sh .config/rofi/launchers/colorful/launcher.sh
+	sh .config/rofi/launcher/launcher.sh
 
 # power menu
 super + x
