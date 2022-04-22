@@ -27,8 +27,8 @@ ctrl + alt + l
     betterlockscreen --lock
 
 
-# lockscreen
-ctrl + alt + p
+# screenshot
+{ctrl + alt + p,Print}
     cd ~/Pictures/screenshots && maim -u -f png -s -b 2 -c 0.35,0.55,0.85,0.25 -l | tee "screenshot_$(date +%Y-%m-%d-%H-%M-%S).png" | xclip -selection clipboard -t image/png
 #
 #

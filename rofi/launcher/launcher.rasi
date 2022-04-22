@@ -8,7 +8,7 @@
  */
 
 configuration {
-	font:							"Iosevka Nerd Font 10";
+	font:							"Fira Code Nerd Font 11";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     display-drun: 					"Applications";
@@ -38,7 +38,7 @@ prompt {
 	background-color: 				@accent;
 	text-color: 					@foreground;
     border-radius:                  10px;
-	font:							"Iosevka Nerd Font 12";
+	font:							"Fira Code Nerd Font 13";
 }
 
 textbox-prompt-colon {
@@ -73,8 +73,8 @@ inputbar {
 listview {
     background-color:               @background;
     padding:                        0px;
-    columns:                        2;
-    lines:                          7;
+    columns:                        1;
+    lines:                          10;
     spacing:                       	1%;
     cycle:                          false;
     dynamic:                        true;
